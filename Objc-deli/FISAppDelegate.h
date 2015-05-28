@@ -11,6 +11,11 @@
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSArray *line;
+
+- (NSMutableArray *) takeANumberWithDeliLine:(NSMutableArray *)deliLine Name:(NSString *)name;
+- (NSMutableArray *) nowServingWithDeliLine:(NSMutableArray *)deliLine;
+- (NSString *) deliLine:(NSMutableArray *)deliLine;
 
 
 @end
